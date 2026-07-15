@@ -1,0 +1,92 @@
+{
+  "_readme": "This is MOCK example data so you can see the tool working end to end. Every item below is a generic placeholder — replace it with your own packing list. Delete this _readme key (or leave it, it's ignored by the app) once you've swapped in your real items.",
+  "ui": {
+    "title": "Staging Room 🧳",
+    "subtitle": "Packing list · never forget, just go",
+    "updatedLabel": "Updated: ",
+    "searchPlaceholder": "Search items, notes, categories…",
+    "resetBtnLabel": "↺ Reset checks",
+    "resetConfirm": "Clear all checks and start a new trip? (Your module choices are kept.)",
+    "modCaption": "🎯 Situational modules — tap to add to this trip",
+    "progressAriaLabel": "Packing progress",
+    "progressTemplate": "Packed <b class=\"tnum\">{done}</b><span class=\"tnum\">/{total}</span>",
+    "progressDoneLabel": "🎉 <b>All packed!</b>",
+    "emptyState": "No matching items. Try a different search, or add more later.",
+    "selectAllAriaPrefix": "Select all: "
+  },
+  "sections": [
+    { "key": "gear",        "emoji": "🧳", "label": "Bags & gear" },
+    { "key": "carry",       "emoji": "🎒", "label": "Carry-on essentials",
+      "desc": "Anything you'd be stuck without if your checked bag went missing." },
+    { "key": "luggage",     "emoji": "💼", "label": "Fine to check in" },
+    { "key": "wear",        "emoji": "👕", "label": "Wearing on travel day" },
+    { "key": "clothes",     "emoji": "👗", "label": "Clothes to pack" },
+    { "key": "bathroom",    "emoji": "🧴", "label": "Toiletries" },
+    { "key": "other",       "emoji": "🍜", "label": "Everything else" },
+    { "key": "situational", "emoji": "🎯", "label": "Trip-specific",
+      "desc": "Turn on a module above to pull its items into this trip's list." }
+  ],
+  "modules": [
+    { "key": "winter",   "emoji": "❄️", "label": "Winter" },
+    { "key": "beach",    "emoji": "🏖️", "label": "Beach" },
+    { "key": "business", "emoji": "💼", "label": "Business" },
+    { "key": "roadtrip", "emoji": "🚗", "label": "Road trip" }
+  ],
+  "items": [
+    { "sec": "gear", "group": "Luggage", "name": "Carry-on roller bag",
+      "specs": [["Size", "55 x 40 x 20cm"], ["Weight", "2.1kg"]],
+      "notes": "Fits under most airline seats." },
+    { "sec": "gear", "group": "Luggage", "name": "Packing cubes", "qty": "x4" },
+    { "sec": "gear", "group": "Day bag", "name": "Crossbody bag", "notes": "Zips shut, holds a water bottle." },
+
+    { "sec": "carry", "group": "Documents", "name": "Passport" },
+    { "sec": "carry", "group": "Documents", "name": "Boarding passes / e-tickets" },
+    { "sec": "carry", "group": "Documents", "name": "Travel insurance details" },
+    { "sec": "carry", "group": "Electronics", "name": "Phone + charging cable" },
+    { "sec": "carry", "group": "Electronics", "name": "Portable charger", "qty": "x1",
+      "notes": "Check it's under the airline's watt-hour limit for carry-on." },
+    { "sec": "carry", "group": "Electronics", "name": "Headphones" },
+    { "sec": "carry", "group": "Comfort", "name": "Travel pillow" },
+    { "sec": "carry", "group": "Comfort", "name": "Reusable water bottle (empty before security)" },
+
+    { "sec": "wear", "group": "Travel day outfit", "name": "Comfortable shoes" },
+    { "sec": "wear", "group": "Travel day outfit", "name": "Layerable top", "notes": "Easy to add/remove for security & plane temperature." },
+
+    { "sec": "luggage", "group": "Adapters & cables", "name": "Universal power adapter" },
+    { "sec": "luggage", "group": "Adapters & cables", "name": "Spare charging cable" },
+    { "sec": "luggage", "group": "Misc", "name": "Travel first-aid basics", "notes": "Painkillers, plasters, any regular medication." },
+
+    { "sec": "clothes", "group": "Tops", "name": "T-shirts / shirts", "qty": "x?" },
+    { "sec": "clothes", "group": "Tops", "name": "Warm layer" },
+    { "sec": "clothes", "group": "Bottoms", "name": "Trousers / jeans", "qty": "x?" },
+    { "sec": "clothes", "group": "Underlayers", "name": "Underwear & socks", "qty": "x?", "notes": "Pack a spare or two." },
+    { "sec": "clothes", "group": "Sleep", "name": "Sleepwear" },
+    { "sec": "clothes", "group": "Outerwear", "name": "Light jacket" },
+
+    { "sec": "bathroom", "group": "Basics", "name": "Toothbrush & toothpaste" },
+    { "sec": "bathroom", "group": "Basics", "name": "Deodorant" },
+    { "sec": "bathroom", "group": "Basics", "name": "Skincare travel bottles", "qty": "≤100ml" },
+    { "sec": "bathroom", "group": "Basics", "name": "Hairbrush" },
+
+    { "sec": "other", "group": "Snacks", "name": "Snacks for the journey" },
+    { "sec": "other", "group": "Just in case", "name": "Umbrella / rain jacket" },
+    { "sec": "other", "group": "Just in case", "name": "Tote bag", "notes": "Folds flat, useful for the trip home." },
+
+    { "sec": "situational", "module": "winter", "name": "Beanie" },
+    { "sec": "situational", "module": "winter", "name": "Gloves" },
+    { "sec": "situational", "module": "winter", "name": "Scarf" },
+
+    { "sec": "situational", "module": "beach", "name": "Swimsuit" },
+    { "sec": "situational", "module": "beach", "name": "Sunscreen" },
+    { "sec": "situational", "module": "beach", "name": "Beach towel", "notes": "Quick-dry, not a bath towel." },
+    { "sec": "situational", "module": "beach", "name": "Flip-flops" },
+
+    { "sec": "situational", "module": "business", "name": "Laptop + charger" },
+    { "sec": "situational", "module": "business", "name": "Smart outfit", "notes": "One that survives a suitcase without ironing." },
+    { "sec": "situational", "module": "business", "name": "Business cards" },
+
+    { "sec": "situational", "module": "roadtrip", "name": "Phone car mount" },
+    { "sec": "situational", "module": "roadtrip", "name": "Playlist downloaded offline" },
+    { "sec": "situational", "module": "roadtrip", "name": "Cooler bag / snacks for the car" }
+  ]
+}

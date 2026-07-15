@@ -1,0 +1,82 @@
+{
+  "_readme": "This is MOCK example data so you can see the tool working end to end. Every brand, size and measurement below is invented for demonstration — replace it with your own wardrobe. Delete this _readme key (or leave it, it's ignored by the app) once you've swapped in your real records.",
+  "ui": {
+    "title": "Fitting Room 🧥",
+    "subtitle": "Sizes & fit notes, at a glance",
+    "updatedLabel": "Updated: ",
+    "searchPlaceholder": "Search brand, item, notes…",
+    "emptyState": "No matches. Try a different filter, or add more items later.",
+    "countTemplate": "{n} items",
+    "countTotalTemplate": "({total} total)",
+    "rangeLabel": "📏 Size range: ",
+    "unitToggleAriaLabel": "Measurement unit",
+    "unnamedLabel": "(untitled)",
+    "sizeLabel": "Size: ",
+    "linkLabel": "Link ↗",
+    "fitLabels": { "small": "Too small", "ok": "Just right", "big": "Too big" }
+  },
+  "categories": [
+    { "key": "tops", "label": "👚 Tops" },
+    { "key": "bottoms", "label": "👖 Bottoms" },
+    { "key": "outerwear", "label": "🧥 Outerwear",
+      "range": [["Bust", "88-94"]],
+      "rangeNote": "Winter coats: leave room for a jumper underneath.",
+      "alwaysShow": true },
+    { "key": "shoes", "label": "👟 Shoes" }
+  ],
+  "seasons": [
+    { "key": "summer", "emoji": "☀️", "label": "Summer", "temp": "24–30°C" },
+    { "key": "mild",   "emoji": "🍂", "label": "Mild",   "temp": "10–24°C" },
+    { "key": "winter", "emoji": "❄️", "label": "Winter", "temp": "<10°C" }
+  ],
+  "records": [
+    {
+      "cat": "tops", "brand": "Everlane", "product": "The Organic Cotton Crew",
+      "colour": "Faded Navy", "size": "M",
+      "material": "100% Organic Cotton",
+      "measures": [["Bust", "94"], ["Length", "66"]],
+      "fit": "ok", "date": "2026-03-02",
+      "notes": "True to size, shrinks a little after the first wash.",
+      "link": "https://example.com/products/organic-cotton-crew",
+      "sku": "DEMO-TOP-001", "price": "38", "season": "mild"
+    },
+    {
+      "cat": "tops", "brand": "Uniqlo", "product": "AIRism Cotton T-Shirt",
+      "colour": "White", "size": "S",
+      "material": "56% Cotton · 44% Polyester",
+      "measures": [["Bust", "88-92"]],
+      "fit": "small", "date": "2026-01-18",
+      "notes": "Runs snug through the shoulders — size up next time.",
+      "link": "https://example.com/products/airism-cotton-tee",
+      "sku": "DEMO-TOP-002", "price": "15", "season": "summer"
+    },
+    {
+      "cat": "bottoms", "brand": "Everlane", "product": "The Way-High Jean",
+      "colour": "Mid Blue", "size": "28",
+      "material": "98% Cotton · 2% Elastane",
+      "measures": [["Waist", "72"], ["Hip", "98"], ["Inseam", "76"]],
+      "fit": "ok", "date": "2026-02-10", "notes": "",
+      "link": "https://example.com/products/way-high-jean",
+      "sku": "DEMO-BOT-001", "price": "98", "season": "mild"
+    },
+    {
+      "cat": "outerwear", "brand": "Uniqlo", "product": "Hybrid Down Parka",
+      "colour": "Black", "size": "M",
+      "material": "Shell 100% Nylon · Fill 90% Down / 10% Feather",
+      "measures": [], "measuresNote": "Couldn't find an official size chart — leaving blank rather than guessing.",
+      "fit": "big", "date": "2025-11-30",
+      "notes": "Roomy on purpose — fits a chunky jumper underneath.",
+      "link": "https://example.com/products/hybrid-down-parka",
+      "sku": "DEMO-OUT-001", "price": "129", "season": "winter"
+    },
+    {
+      "cat": "shoes", "brand": "Allbirds", "product": "Tree Runners",
+      "colour": "Natural Grey", "size": "US 8 / EU 39",
+      "material": "Eucalyptus Tree Fibre",
+      "measures": [],
+      "fit": "ok", "date": "2026-04-05", "notes": "Half a size up from usual street-shoe sizing.",
+      "link": "https://example.com/products/tree-runners",
+      "sku": "DEMO-SHO-001", "price": "98", "season": null
+    }
+  ]
+}

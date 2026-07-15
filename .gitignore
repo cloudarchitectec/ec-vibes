@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Skill build outputs (if a skill is ever test-run inside this repo)
+dist/
+.artifact-url

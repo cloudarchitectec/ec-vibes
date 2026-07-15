@@ -1,0 +1,9 @@
+# Generated, regenerable — never hand-edit, never worth committing.
+dist/
+__pycache__/
+*.pyc
+
+# Contains your private artifact link. Harmless if leaked (it's tied to your Claude
+# account, not a public bearer token) but there's no reason to publish it either —
+# skip this line if you're fine committing it.
+.artifact-url
