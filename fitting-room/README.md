@@ -1,8 +1,6 @@
 # Fitting Room 🧥
 
-A private little "cheat sheet" for your clothing sizes, built with Claude — so next time
-you're standing in a shop (or on a brand's website) wondering "wait, was I an M or an L in
-this brand?", you just check your phone.
+<img src="screenshot.jpg" alt="Fitting Room screenshot — made-up example data, no real brands or measurements" width="600" />
 
 **🇬🇧 [English](#english)** · **🇹🇼 [繁體中文](#繁體中文)**
 
@@ -11,8 +9,8 @@ this brand?", you just check your phone.
 ## English
 
 > Introducing Fitting Room 🧥: a private, offline fit-history reference for your
-> changing-room moment — every garment gets exactly one verdict, 太小 · 剛好 · 太大, and I
-> never have to guess my size in a brand again.
+> changing-room moment — every garment gets exactly one verdict, too small · fit · too big, and you
+> never have to guess your size in a brand again.
 
 ### What is this, really?
 
@@ -27,9 +25,9 @@ privately hosts — nobody else can see it unless you choose to share it.
 
 ### See it in action
 
-<img src="screenshot.jpg" alt="Fitting Room screenshot — made-up example data, no real brands or measurements" width="600" />
+<img src="demo.gif" alt="Fitting Room demo — browsing categories and viewing item fit details" width="300" />
 
-🎬 **[Watch the demo video](demo.mp4)**
+🎬 [Full-quality demo video](demo.mp4)
 
 ### What you get
 
@@ -109,15 +107,12 @@ the hood, see `SKILL.md` for the full data model.
 
 ### FAQ
 
-**Do I need to know Python or HTML?** No — Claude runs everything for you. The scripts in
+- **Do I need to know Python or HTML?** No — Claude runs everything for you. The scripts in
 `reference/` exist so Claude doesn't have to reinvent them each time, not for you to run
 by hand.
 
-**What if I don't want product photos?** Totally fine, just say so during setup — the app
+- **What if I don't want product photos?** Totally fine, just say so during setup — the app
 looks clean either way, showing a category label instead of a thumbnail.
-
-**Can two people share one fitting room?** It's built for one person's sizes at a time,
-but nothing stops you sharing the link with a partner or a shopping buddy if that's useful.
 
 ---
 
@@ -131,9 +126,9 @@ but nothing stops you sharing the link with a partner or a shopping buddy if tha
 
 ### 實際看看
 
-![Fitting Room 截圖──虛構範例資料，非真實品牌或量測數字](screenshot.jpg)
+<img src="demo.gif" alt="Fitting Room demo — browsing categories and viewing item fit details" width="300" />
 
-🎬 **[觀看示範影片](demo.mp4)**
+🎬 **[觀看完整示範影片(有背景音樂)](demo.mp4)**
 
 ### 你會得到什麼
 
@@ -178,11 +173,9 @@ but nothing stops you sharing the link with a partner or a shopping buddy if tha
 
 ### 常見問題
 
-**需要會 Python 或 HTML 嗎？** 不需要──全部由 Claude 執行。`reference/` 裡的程式是給 Claude 重複使用的，不是要你自己手動執行。
+- **需要會 Python 或 HTML 嗎？** 不需要──全部由 Claude 執行。`reference/` 裡的程式是給 Claude 重複使用的，不是要你自己手動執行。
 
-**不想放商品照片可以嗎？** 完全可以，設定時跟 Claude 說一聲就好──沒有照片時會顯示分類文字取代縮圖，畫面一樣乾淨好看。
-
-**可以兩個人共用一份 fitting room 嗎？** 這工具設計上是給一個人記錄自己的尺寸，但如果你想把連結分享給另一半或購物夥伴參考，當然也沒問題。
+- **不想放商品照片可以嗎？** 完全可以，設定時跟 Claude 說一聲就好──沒有照片時會顯示分類文字取代縮圖，畫面一樣乾淨好看。
 
 ---
 

@@ -11,3 +11,6 @@ __pycache__/
 # Skill build outputs (if a skill is ever test-run inside this repo)
 dist/
 .artifact-url
+
+# Personal authoring aids — local-only, not published
+.claude/
