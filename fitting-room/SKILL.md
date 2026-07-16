@@ -94,7 +94,16 @@ mints a new link). Save the URL it returns into `<project>/.artifact-url` (plain
 just the URL, no trailing content) — `build.py` reads this file to remind you where to
 republish on every future build. Tell the user:
 - It's **private** by default; they can share it from the artifact page if they ever want to.
-- Bookmark/add-to-home-screen the link on their phone for quick access while shopping.
+- **Walk them through adding it to their phone's home screen** — don't just say "bookmark
+  it"; give the actual steps (in whatever language you're chatting in) so it sits next to
+  their real apps, one tap away while shopping:
+  - **iPhone**: open the link in **Safari** (logged into claude.ai) → **Share** button →
+    **Add to Home Screen** → give it a short name (emoji fine) → **Add**.
+  - **Android**: open the link in **Chrome** (logged into claude.ai) → **⋮** menu →
+    **Add to Home screen** → pick the shortcut option if asked → confirm.
+  - Mention: it's a bookmark that looks like an app, not an offline app — it needs
+    internet + their claude.ai login; and after every republish the icon automatically
+    opens the newest version, no need to re-add.
 - All edits happen back here in chat — the app itself is read-only.
 
 ## Update workflow (returning sessions)
@@ -114,8 +123,16 @@ The user hands you a product link, an order/receipt, or a label/size-guide photo
    - If photos are enabled: `python3 scripts/add_photo.py "<SKU>" "<image-or-product-URL>"`.
    - Rebuild: `python3 scripts/build.py`. Check the console output (record count, any
      "unrecognised measure label" or "no photo for" warnings).
-4. **Republish** `dist/fitting-room.html` — pass the saved URL from `.artifact-url` as the
+4. **Preview locally when it's worth a look** — `dist/fitting-room.html` is fully
+   self-contained (photos are inlined as base64), so opening it straight in a browser
+   shows exactly what will be published. Skip this for a routine one-record add; offer it
+   for anything visual — an accent change, a new category, first photos, template tweaks.
+5. **Republish** `dist/fitting-room.html` — pass the saved URL from `.artifact-url` as the
    Artifact tool's `url` argument so it updates the same link instead of minting a new one.
+   Rebuilding alone only updates the local file: the published link (and the icon on the
+   user's phone) keeps showing the old version until this republish happens. If the user
+   wants to hold off publishing, fine — but say explicitly that the live page is still the
+   old version so they're not surprised in the changing room.
 
 ## Data model (one object per garment in `data.json` → `records`)
 

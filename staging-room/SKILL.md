@@ -94,7 +94,16 @@ mints a new link). Save the URL it returns into `<project>/.artifact-url` (plain
 just the URL) — `build.py` reads this file to remind you where to republish on every
 future build. Tell the user:
 - It's **private** by default; they can share it from the artifact page if they ever want to.
-- Bookmark/add-to-home-screen the link on their phone.
+- **Walk them through adding it to their phone's home screen** — don't just say "bookmark
+  it"; give the actual steps (in whatever language you're chatting in) so it sits next to
+  their real apps, one tap away before every trip:
+  - **iPhone**: open the link in **Safari** (logged into claude.ai) → **Share** button →
+    **Add to Home Screen** → give it a short name (emoji fine) → **Add**.
+  - **Android**: open the link in **Chrome** (logged into claude.ai) → **⋮** menu →
+    **Add to Home screen** → pick the shortcut option if asked → confirm.
+  - Mention: it's a bookmark that looks like an app, not an offline app — it needs
+    internet + their claude.ai login; and after every republish the icon automatically
+    opens the newest version, no need to re-add.
 - Ticks and module choices are per-device and never sync — that's intentional, not a bug.
 - All *list* edits happen back here in chat — the app itself is read-only for the list;
   only ticking/unticking and toggling modules happens in-app.
@@ -110,8 +119,17 @@ used it"), or gear to log (e.g. a new suitcase with its dimensions). Then:
    `data.json` yet.**
 2. **On approval**: edit `data.json` → `python3 scripts/build.py` → check the console
    output (item counts, any validation warnings).
-3. **Republish** `dist/staging-room.html` — pass the saved URL from `.artifact-url` as the
+3. **Preview locally when it's worth a look** — `dist/staging-room.html` is fully
+   self-contained, so opening it straight in a browser shows exactly what will be
+   published. Skip this for a routine item add; offer it for anything visual — an accent
+   change, reorganised sections, new modules, template tweaks. (Ticks made in the local
+   preview live in that browser's own `localStorage` — they never affect the published page.)
+4. **Republish** `dist/staging-room.html` — pass the saved URL from `.artifact-url` as the
    Artifact tool's `url` argument so it updates the same link instead of minting a new one.
+   Rebuilding alone only updates the local file: the published link (and the icon on the
+   user's phone) keeps showing the old version until this republish happens. If the user
+   wants to hold off publishing, fine — but say explicitly that the live page is still the
+   old version so they're not surprised mid-packing.
 
 ## Data model (one object per item in `data.json` → `items`)
 

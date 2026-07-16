@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Noto Sans TC', sans-serif">
+  <!-- backdrop -->
+  <rect width="1200" height="700" fill="#0b0b0d"/>
+
+  <!-- phone-screen panel -->
+  <rect x="70" y="40" width="1060" height="620" rx="56" fill="#161619" stroke="#2c2c31" stroke-width="2"/>
+
+  <!-- app icons -->
+  <defs>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d47a52"/>
+      <stop offset="1" stop-color="#c2633e"/>
+    </linearGradient>
+    <!-- Claude-style sunburst: irregular rays, round caps -->
+    <g id="burst" stroke="#f6eee3" stroke-width="11" stroke-linecap="round">
+      <line y1="-12" y2="-58" transform="rotate(0)"/>
+      <line y1="-12" y2="-46" transform="rotate(28)"/>
+      <line y1="-12" y2="-56" transform="rotate(59)"/>
+      <line y1="-12" y2="-44" transform="rotate(93)"/>
+      <line y1="-12" y2="-57" transform="rotate(121)"/>
+      <line y1="-12" y2="-45" transform="rotate(149)"/>
+      <line y1="-12" y2="-56" transform="rotate(181)"/>
+      <line y1="-12" y2="-46" transform="rotate(209)"/>
+      <line y1="-12" y2="-58" transform="rotate(240)"/>
+      <line y1="-12" y2="-44" transform="rotate(271)"/>
+      <line y1="-12" y2="-55" transform="rotate(299)"/>
+      <line y1="-12" y2="-46" transform="rotate(330)"/>
+    </g>
+  </defs>
+
+  <!-- Cloth -->
+  <g>
+    <rect x="365" y="150" width="170" height="170" rx="40" fill="url(#clay)"/>
+    <use href="#burst" x="450" y="235"/>
+    <text x="450" y="378" text-anchor="middle" font-size="31" font-weight="600" fill="#ffffff">Cloth</text>
+  </g>
+
+  <!-- Packing -->
+  <g>
+    <rect x="665" y="150" width="170" height="170" rx="40" fill="url(#clay)"/>
+    <use href="#burst" x="750" y="235"/>
+    <text x="750" y="378" text-anchor="middle" font-size="31" font-weight="600" fill="#ffffff">Packing 🎒</text>
+  </g>
+
+  <!-- caption -->
+  <line x1="310" y1="462" x2="890" y2="462" stroke="#313136" stroke-width="2"/>
+  <text x="600" y="524" text-anchor="middle" font-size="25" fill="#a0a0a8">Private Claude Artifacts on the home screen — your tools, one tap away</text>
+  <text x="600" y="572" text-anchor="middle" font-size="25" fill="#a0a0a8">發布成私人 Claude Artifact，加入主畫面後就像一般 App，一鍵打開</text>
+</svg>

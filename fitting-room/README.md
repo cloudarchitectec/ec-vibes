@@ -59,7 +59,8 @@ with Skills support) and a few minutes.
    snug"). Claude will show you a summary table before saving anything, so you can correct
    it.
 5. **Claude publishes it** and gives you a private link. Add it to your phone's home
-   screen (Share → Add to Home Screen on iPhone) so it's one tap away.
+   screen so it's one tap away — see "Add it to your phone's home screen" below for
+   step-by-step iPhone and Android instructions.
 6. **Next time**, just come back to the same Claude conversation (or a new one, if you
    tell Claude the link) and say things like *"add this jacket I just bought"* — Claude
    updates the same page, it doesn't create a new one.
@@ -90,6 +91,37 @@ publishing an Artifact).
      the request from the skill's description and picks it up automatically.
 
 No extra installation, sign-up, or payment needed beyond having Claude Code itself.
+
+### Add it to your phone's home screen
+
+There's no App Store submission and nothing to install — the tool is just a private
+webpage, so you bookmark it onto your home screen and it sits next to your real apps,
+one tap away in the changing room:
+
+<img src="../homescreen.svg" alt="Illustration: the tool saved as an icon on a phone home screen" width="450" />
+
+**On iPhone (Safari):**
+
+1. Open your artifact link in **Safari**, logged into your claude.ai account (the page is
+   private, so a browser that isn't logged in can't open it). If the link opened inside
+   another app's built-in browser, use that app's menu to open the page in Safari first.
+2. Tap the **Share** button (the square with an upward arrow) at the bottom of the screen.
+3. Scroll down and tap **Add to Home Screen**.
+4. Give it a short name — "Cloth", "Fitting Room", emoji welcome — and tap **Add**.
+
+**On Android (Chrome):**
+
+1. Open your artifact link in **Chrome**, logged into your claude.ai account.
+2. Tap the **⋮** menu in the top-right corner.
+3. Tap **Add to Home screen**, and choose the shortcut option if Chrome asks.
+4. Give it a name and confirm.
+
+Two things worth knowing:
+
+- The icon is a bookmark that looks like an app, not an offline app — opening it needs an
+  internet connection and your claude.ai login.
+- When Claude later updates your page (same link), the icon automatically opens the newest
+  version. You never need to re-add it.
 
 ### Is my data private?
 
@@ -146,7 +178,7 @@ looks clean either way, showing a category label instead of a thumbnail.
 2. **直接說出你的需求**，例如「幫我建一個記錄衣服尺寸的 fitting room」，Claude 會讀取 `SKILL.md` 接手處理。
 3. **回答幾個簡單的問題**──介面要用什麼語言（英文、繁體中文，或自己混搭）、你平常買哪些分類的衣服、喜歡哪個主題色。每一項都有預設值，你也可以直接說「用預設的就好」。
 4. **提供你的前幾件單品資料**──可以給商品連結、size tag 的照片，或直接口頭描述（「Uniqlo AIRism 短袖，S 號，穿起來有點緊」）。Claude 會先列出摘要表格讓你確認，不會自作主張直接存檔。
-5. **Claude 幫你發布**，給你一個私人連結。建議加到手機主畫面（iPhone：分享 → 加入主畫面），之後一鍵就能打開。
+5. **Claude 幫你發布**，給你一個私人連結。建議加到手機主畫面，之後一鍵就能打開──iPhone 和 Android 的詳細步驟見下方「加到手機主畫面」。
 6. **之後要更新**，回到同一個 Claude 對話（或在新對話中把連結告訴 Claude），跟它說「幫我加一件剛買的外套」就好──Claude 會更新同一個頁面，不會另外生出一個新的。
 
 ### 安裝 Skill
@@ -162,6 +194,31 @@ looks clean either way, showing a category label instead of a thumbnail.
    - 直接說「幫我建一個記錄衣服尺寸的 fitting room」──Claude 會從 skill 的描述自動辨識並套用。
 
 除了要有 Claude Code 本身之外，不需要額外安裝、註冊或付費。
+
+### 加到手機主畫面
+
+不用上架 App Store、也不用安裝任何東西──這個工具本身就是一個私人網頁，把它「加入主畫面」之後，就會像一般 App 一樣出現在手機桌面上，試衣間裡一鍵就能打開：
+
+<img src="../homescreen.svg" alt="示意圖：工具以圖示形式放在手機主畫面上" width="450" />
+
+**iPhone（Safari）：**
+
+1. 用 **Safari** 打開你的 artifact 連結，並確認已登入你的 claude.ai 帳號（這個頁面是私人的，沒登入的瀏覽器打不開）。如果連結是在其他 App 的內建瀏覽器裡打開的，先透過該 App 的選單改用 Safari 開啟。
+2. 點畫面下方的**分享**按鈕（有向上箭頭的方框）。
+3. 往下捲，點**「加入主畫面」**。
+4. 取個簡短的名字──「Cloth」、「試衣間」、放 emoji 都可以──然後按**「加入」**。
+
+**Android（Chrome）：**
+
+1. 用 **Chrome** 打開你的 artifact 連結，並登入你的 claude.ai 帳號。
+2. 點右上角的 **⋮** 選單。
+3. 點**「加到主畫面」**，如果 Chrome 有跳出選項，選「建立捷徑」。
+4. 命名後確認。
+
+兩個小提醒：
+
+- 這個圖示是「長得像 App 的書籤」，不是離線 App──打開它需要網路連線和 claude.ai 的登入狀態。
+- 之後 Claude 更新你的頁面（同一個連結）時，圖示打開的自動就是最新版本，不用重新加入。
 
 ### 我的資料安全嗎？
 
